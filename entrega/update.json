@@ -1,0 +1,7 @@
+{
+  "versionCode": 24,
+  "versionName": "1.9.8",
+  "apkName": "Finance-Plus-1.9.8-Android.apk",
+  "sha256": "954923b7d1ac3a928190845a5b3a31367930cb65b129cf3f07ea760675fd9ec7",
+  "notes": "Novedades 1.9.8:\n- La app busca e instala sus actualizaciones desde aquí mismo, verificando huella y firma.\n- Aprende de tus aprobaciones: si confirmas 2 veces igual un aviso, los siguientes se registran solos (lo puedes borrar en Configuración).\n- Copia de seguridad cifrada automática cada día, conserva las últimas 7, y botón «Copiar ahora».\n- Vibración suave al guardar, aprobar, desbloquear con huella y actualizar; animaciones más estables."
+}

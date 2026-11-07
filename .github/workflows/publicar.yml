@@ -1,0 +1,32 @@
+name: Publicar versión
+
+on:
+  push:
+    branches: [main]
+    paths: ["entrega/update.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Comprobar y publicar el release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          VER=$(jq -r .versionName entrega/update.json)
+          APK=$(jq -r .apkName entrega/update.json)
+          SHA=$(jq -r .sha256 entrega/update.json)
+          test -f "entrega/$APK"
+          echo "$SHA  entrega/$APK" | sha256sum -c -
+          if gh release view "v$VER" >/dev/null 2>&1; then
+            echo "v$VER ya existe"; exit 0
+          fi
+          jq -r .notes entrega/update.json > notas.txt
+          gh release create "v$VER" "entrega/$APK" entrega/update.json \
+            --title "Finance Plus $VER" --notes-file notas.txt --latest
