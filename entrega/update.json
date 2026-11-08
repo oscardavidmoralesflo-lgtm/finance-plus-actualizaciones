@@ -1,7 +1,8 @@
 {
-  "versionCode": 24,
-  "versionName": "1.9.8",
-  "apkName": "Finance-Plus-1.9.8-Android.apk",
-  "sha256": "954923b7d1ac3a928190845a5b3a31367930cb65b129cf3f07ea760675fd9ec7",
-  "notes": "Novedades 1.9.8:\n- La app busca e instala sus actualizaciones desde aquí mismo, verificando huella y firma.\n- Aprende de tus aprobaciones: si confirmas 2 veces igual un aviso, los siguientes se registran solos (lo puedes borrar en Configuración).\n- Copia de seguridad cifrada automática cada día, conserva las últimas 7, y botón «Copiar ahora».\n- Vibración suave al guardar, aprobar, desbloquear con huella y actualizar; animaciones más estables."
+  "versionCode": 25,
+  "versionName": "1.9.9",
+  "apkName": "Finance-Plus-1.9.9-Android.apk",
+  "sha256": "e99b8481bc05ffa1ba8e4bd089a95efdd1a92b3bf82f829bfbbc38201292a631",
+  "size": 55410580,
+  "notes": "Novedades 1.9.9:\n- «Le enviaste…», envíos, compras, pagos, retiros y cobros se registran solos como gasto.\n- Lo que te envían, abonos, depósitos y recargas de cuenta se registran solos como ingreso.\n- Dos avisos del mismo monto en dos de tus bancos, con 5 minutos o menos, son una transferencia entre tus cuentas; si el primero ya se registró, se corrige solo.\n- Nueva pantalla en Configuración: «Cómo clasifica la app», con las reglas y ejemplos."
 }
